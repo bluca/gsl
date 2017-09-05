@@ -1,0 +1,4 @@
+version=3
+opts=dversionmangle=s/\+ds$//,repacksuffix=+ds,\
+filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/<project>-$1\.tar\.gz/ \
+https://github.com/zeromq/gsl/tags .*/v?(\d\S+)\.(?:tgz|tbz2|txz|tar\.(?:gz|bz2|xz))
