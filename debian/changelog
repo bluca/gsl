@@ -1,5 +1,5 @@
 generator-scripting-language (4.1.5-1) UNRELEASED; urgency=low
 
-  * Initial packaging.
+  * Initial packaging. (Closes: #874426)
 
  -- Luca Boccassi <bluca@debian.org>  Sun, 21 Aug 2016 00:00:00 +0000
