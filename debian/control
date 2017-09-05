@@ -6,6 +6,8 @@ Standards-Version: 4.1.0
 Build-Depends: debhelper (>= 10),
  libpcre3-dev,
 Homepage: https://github.com/zeromq/gsl
+Vcs-Git: https://github.com/bluca/gsl
+Vcs-Browser: https://github.com/bluca/gsl
 
 Package: generator-scripting-language
 Architecture: any
