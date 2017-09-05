@@ -20,15 +20,6 @@ Description: Generator Scripting Language code generator
  definitions, user interfaces, reports, system administration tools
  and much more.
 
-Package: generator-scripting-language-dbg
-Architecture: any
-Section: debug
-Depends:
- generator-scripting-language (= ${binary:Version}),
- ${misc:Depends},
-Description: debugging symbols for generator-scripting-language
- This package contains the debugging symbols for generator-scripting-language.
-
 Package: generator-scripting-language-examples
 Architecture: all
 Depends: ${misc:Depends},
