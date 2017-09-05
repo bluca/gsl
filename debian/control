@@ -3,7 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: GSL Developers <zeromq-dev@lists.zeromq.org>
 Standards-Version: 4.1.0
-Build-Depends: debhelper (>= 9),
+Build-Depends: debhelper (>= 10),
  libpcre3-dev,
 Homepage: https://github.com/zeromq/gsl
 
