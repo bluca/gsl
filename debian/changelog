@@ -2,4 +2,4 @@ generator-scripting-language (4.1.4) UNRELEASED; urgency=low
 
   * Initial packaging.
 
- -- iMatix Corporation <info@imatix.com>  Sun, 21 Aug 2016 00:00:00 +0000
+ -- Luca Boccassi <bluca@debian.org>  Sun, 21 Aug 2016 00:00:00 +0000
