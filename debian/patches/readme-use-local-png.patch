@@ -1,0 +1,16 @@
+Author: Luca Boccassi <bluca@debian.org>
+Description: use locally installed PNG in README.md so that users can fully
+ use the README without internet access.
+Forwarded: no
+Last-Update: 2017-08-31
+--- a/README.md
++++ b/README.md
+@@ -190,7 +190,7 @@ GSL is an acronym for Generator Scriptin
+ Read on to get you started with code generation!
+ 
+ <center>
+-<img src="http://github.com/imatix/gsl/raw/master/images/README_1.png" alt="1">
++<img src="/usr/share/doc/generator-scripting-language/README_1.png" alt="1">
+ </center>
+ 
+ ### Hello World
