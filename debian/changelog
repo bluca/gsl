@@ -1,3 +1,13 @@
+generator-scripting-language (4.1.5-2) unstable; urgency=medium
+
+  * Add copyright notice for sflstr.c and MIT license.
+    (Closes: #878932)
+  * Add fix-sparc64.patch to fix FTBS on Sparc 64. (Closes: #879023)
+  * Add fix-mips64el.patch to fix FTBS on mips64el.
+  * Bump Standards-Version to 4.1.1, no changes.
+
+ -- Luca Boccassi <bluca@debian.org>  Thu, 19 Oct 2017 11:20:30 +0100
+
 generator-scripting-language (4.1.5-1) unstable; urgency=low
 
   * Initial packaging. (Closes: #874426)
