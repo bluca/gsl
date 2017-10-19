@@ -1,2 +1,3 @@
 readme-use-local-png.patch
 fix-sparc64.patch
+fix-mips64el.patch
