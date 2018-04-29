@@ -8,4 +8,4 @@ ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
 endif
 
 %:
-	dh $@ --parallel
+	dh $@
