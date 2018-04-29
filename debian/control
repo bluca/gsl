@@ -2,7 +2,7 @@ Source: generator-scripting-language
 Section: devel
 Priority: optional
 Maintainer: Luca Boccassi <bluca@debian.org>
-Standards-Version: 4.1.1
+Standards-Version: 4.1.4
 Build-Depends: debhelper (>= 10),
  libpcre3-dev,
 Homepage: https://github.com/zeromq/gsl
