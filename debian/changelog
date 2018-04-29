@@ -1,3 +1,12 @@
+generator-scripting-language (4.1.5-3) unstable; urgency=medium
+
+  * Add fix-ia64.patch and fix-riscv64.patch to fix FTBS on ia64 and
+    riscv64.
+  * Bump Standards-Version to 4.1.4, no changes.
+  * Remove --parallel from dh, as it is enabled by default.
+
+ -- Luca Boccassi <bluca@debian.org>  Sun, 29 Apr 2018 17:10:13 +0100
+
 generator-scripting-language (4.1.5-2) unstable; urgency=medium
 
   * Add copyright notice for sflstr.c and MIT license.
