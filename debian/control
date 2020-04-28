@@ -3,7 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: Luca Boccassi <bluca@debian.org>
 Standards-Version: 4.1.4
-Build-Depends: debhelper (>= 10),
+Build-Depends: debhelper (>= 12~),
  libpcre3-dev,
 Homepage: https://github.com/zeromq/gsl
 Vcs-Git: https://github.com/bluca/gsl
