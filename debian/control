@@ -4,8 +4,7 @@ Priority: optional
 Maintainer: Luca Boccassi <bluca@debian.org>
 Standards-Version: 4.7.0
 Rules-Requires-Root: no
-Build-Depends: debhelper-compat (= 13),
- libpcre3-dev,
+Build-Depends: debhelper-compat (= 13), cmake,
 Homepage: https://github.com/zeromq/gsl
 Vcs-Git: https://github.com/bluca/gsl.git
 Vcs-Browser: https://github.com/bluca/gsl

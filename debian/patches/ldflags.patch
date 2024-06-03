@@ -1,0 +1,11 @@
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -51,7 +51,7 @@
+ EXE =
+ DBG =
+ CC = ./c -q
+-export CCLIBS = -lpcre
++export CCLIBS ?= -lpcre
+ 
+ CPPFLAGS ?= -I/usr/include/pcre
+ 

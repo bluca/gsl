@@ -4,3 +4,4 @@ fix-mips64el.patch
 fix-ia64.patch
 fix-riscv64.patch
 fix-loongarch64.patch
+ldflags.patch
