@@ -1,0 +1,28 @@
+Author: ZHANG NA <zhangna@loongson.cn>
+Description: add loongarch64 architecture support
+Origin: https://github.com/zeromq/gsl/commit/780e07ad647dd4ee55444ba83be71af84c8b9ca7
+Forwarded: yes
+--- a/src/prelude.h
++++ b/src/prelude.h
+@@ -94,7 +94,8 @@
+     || defined (__s390x__) || (defined (__sparc__) && defined (__arch64__)) \
+     || defined (__ia64) || defined (__itanium__) || defined (_M_IA64) \
+     || defined (__riscv64) || (defined (__riscv_xlen) && __riscv_xlen == 64) \
+-    || (defined (__mips__) && defined (_MIPSEL) && _MIPS_SIM == _ABI64))
++    || (defined (__mips__) && defined (_MIPSEL) && _MIPS_SIM == _ABI64) \
++    || defined (__loongarch64))
+ #    define __IS_64BIT__                /*  May have 64-bit OS/compiler      */
+ #else
+ #    define __IS_32BIT__                /*  Else assume 32-bit OS/compiler   */
+--- a/src/sfl.h
++++ b/src/sfl.h
+@@ -133,7 +133,8 @@
+     || defined (__s390x__) || (defined (__sparc__) && defined (__arch64__)) \
+     || defined (__ia64) || defined (__itanium__) || defined (_M_IA64) \
+     || defined (__riscv64) || (defined (__riscv_xlen) && __riscv_xlen == 64) \
+-    || (defined (__mips__) && defined (_MIPSEL) && _MIPS_SIM == _ABI64))
++    || (defined (__mips__) && defined (_MIPSEL) && _MIPS_SIM == _ABI64) \
++    || defined (__loongarch64))
+ #    define __IS_64BIT__                /*  May have 64-bit OS/compiler      */
+ #else
+ #    define __IS_32BIT__                /*  Else assume 32-bit OS/compiler   */
