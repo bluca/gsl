@@ -1,3 +1,16 @@
+generator-scripting-language (4.1.5-4) unstable; urgency=medium
+
+  * Merge pull request #1 from debian-janitor/lintian-fixes
+  * Backport patch to fix Loongarch64 build (Closes: #1051448)
+  * Set Rules-Requires-Root: no
+  * Bump debhelper-compat to 13
+  * Bump Standards-version to 4.7.0
+  * Vendor pcre3
+  * debian/pcre3: remove unneeded files
+  * Build using the vendored static libpcre.a (Closes: #1000118)
+
+ -- Luca Boccassi <bluca@debian.org>  Mon, 03 Jun 2024 22:53:57 +0100
+
 generator-scripting-language (4.1.5-3) unstable; urgency=medium
 
   * Add fix-ia64.patch and fix-riscv64.patch to fix FTBS on ia64 and
