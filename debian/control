@@ -3,6 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: Luca Boccassi <bluca@debian.org>
 Standards-Version: 4.1.4
+Rules-Requires-Root: no
 Build-Depends: debhelper-compat (= 12),
  libpcre3-dev,
 Homepage: https://github.com/zeromq/gsl
