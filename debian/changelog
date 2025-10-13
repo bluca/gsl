@@ -1,3 +1,18 @@
+generator-scripting-language (4.1.5-5) unstable; urgency=medium
+
+  [ Luca Boccassi ]
+  * d/rules: add -DCMAKE_POLICY_VERSION_MINIMUM=3.5 to fix FTBFS with
+    CMake 4 (Closes: #1112945)
+  * Build depend on libcrypt-dev (Closes: #1106982)
+  * d/control: bump Standards-Version to 4.7.2, no changes
+  * d/copyright: fix path to sflstr.c
+  * d/patches: fix some metadata
+
+  [ Nilesh Patra ]
+  * d/rules: fix cross compilation (Closes: #1110323)
+
+ -- Luca Boccassi <bluca@debian.org>  Mon, 13 Oct 2025 15:26:58 +0100
+
 generator-scripting-language (4.1.5-4) unstable; urgency=medium
 
   * Merge pull request #1 from debian-janitor/lintian-fixes
