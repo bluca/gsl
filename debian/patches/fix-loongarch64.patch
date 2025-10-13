@@ -1,7 +1,7 @@
 Author: ZHANG NA <zhangna@loongson.cn>
 Description: add loongarch64 architecture support
 Origin: https://github.com/zeromq/gsl/commit/780e07ad647dd4ee55444ba83be71af84c8b9ca7
-Forwarded: yes
+Forwarded: https://github.com/zeromq/gsl/pull/47
 --- a/src/prelude.h
 +++ b/src/prelude.h
 @@ -94,7 +94,8 @@

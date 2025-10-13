@@ -1,6 +1,7 @@
 Author: Luca Boccassi <bluca@debian.org>
 Description: add preprocessor definitions for sparc 64
-Forwarded: yes
+Origin: https://github.com/zeromq/gsl/commit/eda3935f45402c874151cd73be4c29dc989a274f
+Forwarded: https://github.com/zeromq/gsl/pull/16
 Last-Update: 2017-10-18
 --- a/src/prelude.h
 +++ b/src/prelude.h

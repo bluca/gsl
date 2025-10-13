@@ -1,5 +1,6 @@
 Author: Luca Boccassi <bluca@debian.org>
 Description: add preprocessor definitions for riscv64
+Origin: https://github.com/zeromq/gsl/commit/e80cd452a4b602553063a62046286a24abd6d722
 Forwarded: https://github.com/zeromq/gsl/pull/30
 Last-Update: 2018-04-29
 --- a/src/prelude.h

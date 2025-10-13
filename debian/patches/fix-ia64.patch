@@ -1,5 +1,6 @@
 Author: Luca Boccassi <bluca@debian.org>
 Description: add preprocessor definitions for ia64
+Origin: https://github.com/zeromq/gsl/commit/c65f6fbfb6c0c527ecb73850c70b13ed146e0fe3
 Forwarded: https://github.com/zeromq/gsl/pull/30
 Last-Update: 2018-04-29
 --- a/src/prelude.h

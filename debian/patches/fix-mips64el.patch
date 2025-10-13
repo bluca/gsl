@@ -1,6 +1,7 @@
 Author: Luca Boccassi <bluca@debian.org>
 Description: add preprocessor definitions for mips64el
-Forwarded: yes
+Origin: https://github.com/zeromq/gsl/commit/4f3d0836872a4a54795f65685ee6d0ad942521b9
+Forwarded: https://github.com/zeromq/gsl/pull/16
 Last-Update: 2017-10-18
 --- a/src/prelude.h
 +++ b/src/prelude.h
