@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 #export DH_VERBOSE=1
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+-include /usr/share/dpkg/buildtools.mk
 
 ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
     PAR := $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
@@ -16,11 +17,13 @@ export DEB_CPPFLAGS_MAINT_APPEND=-I$(CURDIR)/debian/pcre3-$(DEB_HOST_GNU_TYPE)/
 execute_after_dh_auto_clean:
 	rm -rf $(CURDIR)/debian/pcre3-$(DEB_HOST_GNU_TYPE)
 
-execute_before_dh_auto_build:
+override_dh_auto_build:
 	mkdir -p $(CURDIR)/debian/pcre3-$(DEB_HOST_GNU_TYPE)
 	cd $(CURDIR)/debian/pcre3-$(DEB_HOST_GNU_TYPE) && \
 		cmake ../pcre3 \
 			-DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
+			-DCMAKE_CXX_COMPILER=$(CXX) \
+			-DCMAKE_C_COMPILER=$(CC) \
 			-DPCRE_SUPPORT_UTF=ON \
 			-DPCRE_SUPPORT_UNICODE_PROPERTIES=ON \
 			-DPCRE_BUILD_PCRECPP=OFF \
@@ -29,4 +32,5 @@ execute_before_dh_auto_build:
 			-DPCRE_SUPPORT_LIBZ=OFF \
 			-DPCRE_SUPPORT_LIBBZ2=OFF \
 			-DPCRE_SUPPORT_LIBREADLINE=OFF && \
-		make
+		$(MAKE) CC="$(CC)"
+	dh_auto_build -- CC="CCNAME=$(CC) ./c -q"
